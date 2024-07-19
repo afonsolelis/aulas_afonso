@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+
+    
+    <title>Aula 3 - Análise Sintática - Aulas Afonso</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../css/base.min.css" rel="stylesheet">
+    <link href="../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../..">Aulas Afonso</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../..">Bem Vindo</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Backend <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../backend/10_filas_rabbitmq/">Filas com RabbitMQ e Controle Assíncrono de Requisições</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/11_tdd_testes_unitarios/">TDD e Testes Unitários</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/12_deploy_render/">Deploy com Render (Web Service + PostgreSQL)</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/13_autenticacao_criptografia_usuarios/">Autenticação com Criptografia de Usuários</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/14_revisao_direcionamento_projetos/">Revisão e Direcionamento de Projetos</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/15_avaliacao_semestral/">Avaliação Semestral</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/1_analise_requisitos_viabilidade/">Aula 1 - Análise de Requisitos e Viabilidade: Uma Aula Avançada com Desafio Prático</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/2_gitflow_conventional_commits/">Aula 2 - Gitflow e Conventional Commits</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/3_virtualizacao_node_docker/">Virtualização, Node e Docker</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/4_modelagem_bd_models/">Modelagem de Banco de Dados e Models</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/5_rotas_controllers/">Rotas e Controllers</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/6_atividade_avaliativa_individual/">Atividade Avaliativa Individual</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/7_queries_sql_avancadas/">Queries SQLs Avançadas em Banco de Dados</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/8_helpers_camadas_auxiliares_mvc/">Helpers e Camadas Auxiliares do MVC</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/9_avaliacao_multidisciplinar/">Avaliação Multidisciplinar</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/home/">Backend</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Compiladores <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../aula1/">Aula 1 - Prazer, Compiladores! 🤝👾</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../aula2/">Aula 2 - Compilação e Interação: Do Código ao Executável 💻🔧</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Aula 3 - Análise Sintática</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../aula4/">Aula 4 - Análise Semântica em Compiladores</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../home/">Home - Bem-vindos ao Módulo de Compiladores!</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Concretoi <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../concretoi/home/">Concreto I</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Concretoii <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../concretoii/home/">Concreto II</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Processos fabricacao <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../processos_fabricacao/aula1/">Aula: Processos de Fabricação e Usinagem</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../processos_fabricacao/aula2/">Aula 2: Usinagem: Uma Jornada Prática</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../processos_fabricacao/aula3/">Aula 3: Soldagem e Conformação</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../processos_fabricacao/aula4/">Aula 4: Processos de Soldagem</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../processos_fabricacao/home/">Processos de Fabricação</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../aula2/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../aula4/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#aula-3-analise-sintatica">Aula 3 - Análise Sintática</a></li>
+            <li class="second-level"><a href="#introducao-antes-revisitaremos-a-analise-lexica">Introdução - Antes, revisitaremos a Análise Léxica</a></li>
+                
+            <li class="second-level"><a href="#objetivos-da-analise-lexica-um-resumo">Objetivos da Análise Léxica: Um Resumo</a></li>
+                
+            <li class="second-level"><a href="#componentes-de-um-analisador-lexico">Componentes de um Analisador Léxico</a></li>
+                
+            <li class="second-level"><a href="#processo-de-analise-lexica">Processo de Análise Léxica</a></li>
+                
+            <li class="second-level"><a href="#exemplo-de-tokens">Exemplo de Tokens</a></li>
+                
+            <li class="second-level"><a href="#desafio-em-python">Desafio em Python</a></li>
+                
+                <li class="third-level"><a href="#desafio-implementar-um-analisador-lexico-em-python">Desafio: Implementar um Analisador Léxico em Python</a></li>
+                <li class="third-level"><a href="#teste-esperado">Teste esperado</a></li>
+        <li class="first-level "><a href="#analise-sintatica">Análise Sintática</a></li>
+            <li class="second-level"><a href="#introducao">Introdução</a></li>
+                
+            <li class="second-level"><a href="#objetivos-da-analise-sintatica">Objetivos da Análise Sintática</a></li>
+                
+            <li class="second-level"><a href="#componentes-de-um-analisador-sintatico">Componentes de um Analisador Sintático</a></li>
+                
+            <li class="second-level"><a href="#processo-de-analise-sintatica">Processo de Análise Sintática</a></li>
+                
+            <li class="second-level"><a href="#exemplos-de-gramaticas">Exemplos de Gramáticas</a></li>
+                
+            <li class="second-level"><a href="#exemplo-de-implementacao">Exemplo de Implementação</a></li>
+                
+            <li class="second-level"><a href="#desafio-em-python_1">Desafio em Python</a></li>
+                
+                <li class="third-level"><a href="#desafio-implementar-um-analisador-sintatico-completo">Desafio: Implementar um Analisador Sintático Completo</a></li>
+                <li class="third-level"><a href="#teste-esperado_1">Teste esperado</a></li>
+        <li class="first-level "><a href="#resumao">Resumão!</a></li>
+            <li class="second-level"><a href="#analise-de-compilacao-lexica-sintatica-e-semantica">Análise de Compilação: Léxica, Sintática e Semântica</a></li>
+                
+            <li class="second-level"><a href="#introducao_1">Introdução</a></li>
+                
+            <li class="second-level"><a href="#analise-lexica">Análise Léxica</a></li>
+                
+                <li class="third-level"><a href="#objetivo">Objetivo</a></li>
+                <li class="third-level"><a href="#componentes">Componentes</a></li>
+                <li class="third-level"><a href="#exemplo-de-tokens_1">Exemplo de Tokens</a></li>
+                <li class="third-level"><a href="#implementacao">Implementação</a></li>
+            <li class="second-level"><a href="#analise-sintatica_1">Análise Sintática</a></li>
+                
+                <li class="third-level"><a href="#objetivo_1">Objetivo</a></li>
+                <li class="third-level"><a href="#componentes_1">Componentes</a></li>
+                <li class="third-level"><a href="#exemplo-de-gramatica">Exemplo de Gramática</a></li>
+                <li class="third-level"><a href="#implementacao_1">Implementação</a></li>
+            <li class="second-level"><a href="#analise-semantica">Análise Semântica</a></li>
+                
+                <li class="third-level"><a href="#objetivo_2">Objetivo</a></li>
+                <li class="third-level"><a href="#componentes_2">Componentes</a></li>
+                <li class="third-level"><a href="#processo">Processo</a></li>
+                <li class="third-level"><a href="#exemplo-de-verificacao-de-tipos">Exemplo de Verificação de Tipos</a></li>
+            <li class="second-level"><a href="#conclusao">Conclusão</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="aula-3-analise-sintatica">Aula 3 - Análise Sintática</h1>
+<h2 id="introducao-antes-revisitaremos-a-analise-lexica">Introdução - Antes, revisitaremos a Análise Léxica</h2>
+<p>A análise léxica, também conhecida como lexing ou tokenização, é o primeiro estágio na compilação de um programa. Esse processo envolve a conversão de uma sequência de caracteres de entrada em uma sequência de tokens, que são unidades atômicas significativas do código fonte. Esses tokens podem representar palavras-chave, identificadores, literais, operadores e outros elementos sintáticos.</p>
+<h2 id="objetivos-da-analise-lexica-um-resumo">Objetivos da Análise Léxica: Um Resumo</h2>
+<p>Os principais objetivos da análise léxica incluem:</p>
+<ol>
+<li><strong>Simplificação da análise sintática</strong>: Convertendo a entrada em tokens, a análise sintática (ou parsing) torna-se mais simples e eficiente.</li>
+<li><strong>Detecção de erros léxicos</strong>: Identificar e relatar erros na fase inicial da compilação.</li>
+<li><strong>Remoção de elementos irrelevantes</strong>: Eliminar espaços em branco, comentários e outros elementos que não afetam a execução do código.</li>
+</ol>
+<h2 id="componentes-de-um-analisador-lexico">Componentes de um Analisador Léxico</h2>
+<p>Um analisador léxico geralmente é composto por:</p>
+<ul>
+<li><strong>Tabela de símbolos</strong>: Armazena informações sobre identificadores e palavras-chave encontradas no código.</li>
+<li><strong>Regras léxicas</strong>: Definem padrões para reconhecer tokens utilizando expressões regulares.</li>
+<li><strong>Autômatos Finitos</strong>: Implementam as regras léxicas para varrer a entrada e produzir tokens.</li>
+</ul>
+<h2 id="processo-de-analise-lexica">Processo de Análise Léxica</h2>
+<ol>
+<li><strong>Leitura da entrada</strong>: O código fonte é lido como uma sequência de caracteres.</li>
+<li><strong>Aplicação de regras léxicas</strong>: Padrões são aplicados para identificar diferentes tipos de tokens.</li>
+<li><strong>Geração de tokens</strong>: Cada padrão identificado é convertido em um token correspondente.</li>
+<li><strong>Tratamento de erros</strong>: Se um padrão inválido é encontrado, um erro léxico é reportado.</li>
+</ol>
+<h2 id="exemplo-de-tokens">Exemplo de Tokens</h2>
+<p>Considere o seguinte trecho de código:</p>
+<pre><code class="language-python">int main() {
+    int a = 10;
+    int b = 20;
+    int sum = a + b;
+}
+</code></pre>
+<p>O analisador léxico pode gerar a seguinte sequência de tokens:</p>
+<ol>
+<li><code>int</code> (palavra-chave)</li>
+<li><code>main</code> (identificador)</li>
+<li><code>(</code> (símbolo)</li>
+<li><code>)</code> (símbolo)</li>
+<li><code>{</code> (símbolo)</li>
+<li><code>int</code> (palavra-chave)</li>
+<li><code>a</code> (identificador)</li>
+<li><code>=</code> (operador)</li>
+<li><code>10</code> (literal)</li>
+<li><code>;</code> (símbolo)</li>
+<li><code>int</code> (palavra-chave)</li>
+<li><code>b</code> (identificador)</li>
+<li><code>=</code> (operador)</li>
+<li><code>20</code> (literal)</li>
+<li><code>;</code> (símbolo)</li>
+<li><code>int</code> (palavra-chave)</li>
+<li><code>sum</code> (identificador)</li>
+<li><code>=</code> (operador)</li>
+<li><code>a</code> (identificador)</li>
+<li><code>+</code> (operador)</li>
+<li><code>b</code> (identificador)</li>
+<li><code>;</code> (símbolo)</li>
+<li><code>}</code> (símbolo)</li>
+</ol>
+<h2 id="desafio-em-python">Desafio em Python</h2>
+<p>Agora que você compreendeu o básico sobre análise léxica, aqui está um desafio para colocar em prática seus conhecimentos. </p>
+<h3 id="desafio-implementar-um-analisador-lexico-em-python">Desafio: Implementar um Analisador Léxico em Python</h3>
+<p>Escreva um analisador léxico em Python que reconheça os seguintes tokens em uma expressão aritmética simples contendo inteiros, operadores (<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>) e parênteses:</p>
+<ul>
+<li>Inteiros: uma sequência de dígitos.</li>
+<li>Operadores: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code></li>
+<li>Parênteses: <code>(</code>, <code>)</code></li>
+</ul>
+<p>Sua tarefa é implementar a função <code>lexical_analysis</code> que recebe uma string contendo a expressão aritmética e retorna uma lista de tokens.</p>
+<pre><code class="language-python">import re
+
+def lexical_analysis(expression):
+    # Definir os padrões para os tokens
+    token_specification = [
+        ('NUMBER',    r'\d+'),    # Inteiros
+        ('PLUS',      r'\+'),     # Operador +
+        ('MINUS',     r'-'),      # Operador -
+        ('TIMES',     r'\*'),     # Operador *
+        ('DIVIDE',    r'/'),      # Operador /
+        ('LPAREN',    r'\('),     # Parêntese esquerdo
+        ('RPAREN',    r'\)'),     # Parêntese direito
+        ('SKIP',      r'[ \t]+'), # Espaços em branco
+        ('MISMATCH',  r'.'),      # Qualquer outro caractere
+    ]
+
+    # Compilar as expressões regulares em um único regex
+    tok_regex = '|'.join(f'(?P&lt;{pair[0]}&gt;{pair[1]})' for pair in token_specification)
+    get_token = re.compile(tok_regex).match
+    line = expression.strip()
+    pos = 0
+    tokens = []
+
+    # Iterar sobre a string de entrada para encontrar os tokens
+    while pos &lt; len(line):
+        match = get_token(line, pos)
+        if match is None:
+            raise RuntimeError(f'Erro léxico em {line[pos]}')
+        pos = match.end()
+        token_type = match.lastgroup
+        if token_type == 'NUMBER':
+            value = int(match.group(token_type))
+            tokens.append((token_type, value))
+        elif token_type != 'SKIP':
+            tokens.append((token_type, match.group(token_type)))
+
+    return tokens
+
+# Teste seu analisador léxico
+expression = &quot;3 + 5 * ( 10 - 20 ) / 2&quot;
+tokens = lexical_analysis(expression)
+print(tokens)
+</code></pre>
+<h3 id="teste-esperado">Teste esperado</h3>
+<p>Para a expressão <code>"3 + 5 * ( 10 - 20 ) / 2"</code>, a saída esperada seria:</p>
+<pre><code class="language-python">[('NUMBER', 3), ('PLUS', '+'), ('NUMBER', 5), ('TIMES', '*'), 
+ ('LPAREN', '('), ('NUMBER', 10), ('MINUS', '-'), ('NUMBER', 20), 
+ ('RPAREN', ')'), ('DIVIDE', '/'), ('NUMBER', 2)]
+</code></pre>
+<p>Boa sorte e divirta-se resolvendo o desafio!</p>
+<h1 id="analise-sintatica">Análise Sintática</h1>
+<h2 id="introducao">Introdução</h2>
+<p>A análise sintática, também conhecida como parsing, é o segundo estágio do processo de compilação. Ela envolve a análise da sequência de tokens gerada pelo analisador léxico para construir uma estrutura hierárquica, como uma árvore de análise sintática (AST - Abstract Syntax Tree). Essa árvore representa a estrutura gramatical do código fonte conforme definido pela gramática da linguagem de programação.</p>
+<h2 id="objetivos-da-analise-sintatica">Objetivos da Análise Sintática</h2>
+<p>Os principais objetivos da análise sintática incluem:</p>
+<ol>
+<li><strong>Verificação da estrutura gramatical</strong>: Garantir que a sequência de tokens obedeça às regras gramaticais da linguagem.</li>
+<li><strong>Construção de estruturas hierárquicas</strong>: Criar representações estruturais do código, como árvores de análise ou grafos.</li>
+<li><strong>Detecção de erros sintáticos</strong>: Identificar e relatar erros gramaticais.</li>
+</ol>
+<h2 id="componentes-de-um-analisador-sintatico">Componentes de um Analisador Sintático</h2>
+<p>Um analisador sintático geralmente é composto por:</p>
+<ul>
+<li><strong>Gramática da linguagem</strong>: Um conjunto de regras que define a estrutura da linguagem.</li>
+<li><strong>Analisador léxico</strong>: Um componente que fornece a sequência de tokens.</li>
+<li><strong>Algoritmo de parsing</strong>: Responsável por construir a árvore de análise a partir dos tokens.</li>
+</ul>
+<h2 id="processo-de-analise-sintatica">Processo de Análise Sintática</h2>
+<ol>
+<li><strong>Recebimento dos tokens</strong>: A sequência de tokens gerada pelo analisador léxico é recebida.</li>
+<li><strong>Aplicação de regras gramaticais</strong>: As regras gramaticais são aplicadas para construir a árvore de análise.</li>
+<li><strong>Detecção de erros sintáticos</strong>: Erros são detectados e reportados se a sequência de tokens não obedecer às regras gramaticais.</li>
+</ol>
+<h2 id="exemplos-de-gramaticas">Exemplos de Gramáticas</h2>
+<p>Considere a seguinte gramática para expressões aritméticas simples:</p>
+<ul>
+<li>Expressão → Termo {("+" | "-") Termo}</li>
+<li>Termo → Fator {("*" | "/") Fator}</li>
+<li>Fator → Número | "(" Expressão ")"</li>
+</ul>
+<h2 id="exemplo-de-implementacao">Exemplo de Implementação</h2>
+<p>Abaixo está uma implementação básica de um analisador sintático para expressões aritméticas em Python. Ele utiliza um analisador léxico para gerar tokens e, em seguida, constrói uma árvore de análise sintática (AST).</p>
+<pre><code class="language-python">import re
+
+# Analisador Léxico
+def lexical_analysis(expression):
+    token_specification = [
+        ('NUMBER',    r'\d+'),    
+        ('PLUS',      r'\+'),     
+        ('MINUS',     r'-'),      
+        ('TIMES',     r'\*'),     
+        ('DIVIDE',    r'/'),      
+        ('LPAREN',    r'\('),     
+        ('RPAREN',    r'\)'),     
+        ('SKIP',      r'[ \t]+'), 
+        ('MISMATCH',  r'.'),      
+    ]
+
+    tok_regex = '|'.join(f'(?P&lt;{pair[0]}&gt;{pair[1]})' for pair in token_specification)
+    get_token = re.compile(tok_regex).match
+    line = expression.strip()
+    pos = 0
+    tokens = []
+
+    while pos &lt; len(line):
+        match = get_token(line, pos)
+        if match is None:
+            raise RuntimeError(f'Erro léxico em {line[pos]}')
+        pos = match.end()
+        token_type = match.lastgroup
+        if token_type == 'NUMBER':
+            value = int(match.group(token_type))
+            tokens.append((token_type, value))
+        elif token_type != 'SKIP':
+            tokens.append((token_type, match.group(token_type)))
+
+    return tokens
+
+# Analisador Sintático
+class Parser:
+    def __init__(self, tokens):
+        self.tokens = tokens
+        self.pos = 0
+
+    def parse(self):
+        return self.expression()
+
+    def expression(self):
+        node = self.term()
+        while self.current_token() in ('PLUS', 'MINUS'):
+            token = self.current_token()
+            self.next_token()
+            node = (token, node, self.term())
+        return node
+
+    def term(self):
+        node = self.factor()
+        while self.current_token() in ('TIMES', 'DIVIDE'):
+            token = self.current_token()
+            self.next_token()
+            node = (token, node, self.factor())
+        return node
+
+    def factor(self):
+        token = self.current_token()
+        if token == 'NUMBER':
+            self.next_token()
+            return ('NUMBER', self.current_value())
+        elif token == 'LPAREN':
+            self.next_token()
+            node = self.expression()
+            if self.current_token() == 'RPAREN':
+                self.next_token()
+                return node
+            else:
+                raise RuntimeError(&quot;Erro: ')' esperado&quot;)
+        else:
+            raise RuntimeError(f&quot;Erro: Token inesperado {token}&quot;)
+
+    def current_token(self):
+        return self.tokens[self.pos][0] if self.pos &lt; len(self.tokens) else None
+
+    def current_value(self):
+        return self.tokens[self.pos - 1][1]
+
+    def next_token(self):
+        self.pos += 1
+
+# Função principal para realizar a análise léxica e sintática
+def main():
+    expression = &quot;3 + 5 * ( 10 - 20 ) / 2&quot;
+    tokens = lexical_analysis(expression)
+    print(&quot;Tokens:&quot;, tokens)
+
+    parser = Parser(tokens)
+    ast = parser.parse()
+    print(&quot;AST:&quot;, ast)
+
+# Executar a função principal
+if __name__ == &quot;__main__&quot;:
+    main()
+</code></pre>
+<h2 id="desafio-em-python_1">Desafio em Python</h2>
+<p>Agora que você compreendeu o básico sobre análise sintática, aqui está um desafio para colocar em prática seus conhecimentos.</p>
+<h3 id="desafio-implementar-um-analisador-sintatico-completo">Desafio: Implementar um Analisador Sintático Completo</h3>
+<p>Escreva um analisador sintático que, além de analisar expressões aritméticas simples, seja capaz de analisar expressões com variáveis. Considere a seguinte gramática estendida:</p>
+<ul>
+<li>Expressão → Termo {("+" | "-") Termo}</li>
+<li>Termo → Fator {("*" | "/") Fator}</li>
+<li>Fator → Número | Identificador | "(" Expressão ")"</li>
+<li>Identificador → [a-zA-Z_][a-zA-Z0-9_]*</li>
+</ul>
+<p>Implemente a função <code>parse</code> para lidar com variáveis e teste-a com uma expressão que inclua variáveis.</p>
+<pre><code class="language-python">import re
+
+def lexical_analysis(expression):
+    token_specification = [
+        ('NUMBER',    r'\d+'),
+        ('ID',        r'[a-zA-Z_][a-zA-Z0-9_]*'),
+        ('PLUS',      r'\+'),
+        ('MINUS',     r'-'),
+        ('TIMES',     r'\*'),
+        ('DIVIDE',    r'/'),
+        ('LPAREN',    r'\('),
+        ('RPAREN',    r'\)'),
+        ('SKIP',      r'[ \t]+'),
+        ('MISMATCH',  r'.'),
+    ]
+
+    tok_regex = '|'.join(f'(?P&lt;{pair[0]}&gt;{pair[1]})' for pair in token_specification)
+    get_token = re.compile(tok_regex).match
+    line = expression.strip()
+    pos = 0
+    tokens = []
+
+    while pos &lt; len(line):
+        match = get_token(line, pos)
+        if match is None:
+            raise RuntimeError(f'Erro léxico em {line[pos]}')
+        pos = match.end()
+        token_type = match.lastgroup
+        if token_type in ('NUMBER', 'ID'):
+            value = match.group(token_type)
+            tokens.append((token_type, value))
+        elif token_type != 'SKIP':
+            tokens.append((token_type, match.group(token_type)))
+
+    return tokens
+
+class Parser:
+    def __init__(self, tokens):
+        self.tokens = tokens
+        self.pos = 0
+
+    def parse(self):
+        return self.expression()
+
+    def expression(self):
+        node = self.term()
+        while self.current_token() in ('PLUS', 'MINUS'):
+            token = self.current_token()
+            self.next_token()
+            node = (token, node, self.term())
+        return node
+
+    def term(self):
+        node = self.factor()
+        while self.current_token() in ('TIMES', 'DIVIDE'):
+            token = self.current_token()
+            self.next_token()
+            node = (token, node, self.factor())
+        return node
+
+    def factor(self):
+        token = self.current_token()
+        if token == 'NUMBER':
+            self.next_token()
+            return ('NUMBER', self.current_value())
+        elif token == 'ID':
+            self.next_token()
+            return ('ID', self.current_value())
+        elif token == 'LPAREN':
+            self.next_token()
+            node = self.expression()
+            if self.current_token() == 'RPAREN':
+                self.next_token()
+                return node
+            else:
+                raise RuntimeError(&quot;Erro: ')' esperado&quot;)
+        else:
+            raise RuntimeError(f&quot;Erro: Token inesperado {token}&quot;)
+
+    def current_token(self):
+        return self.tokens[self.pos][0] if self.pos &lt; len(self.tokens) else None
+
+    def current_value(self):
+        return self.tokens[self.pos - 1][1]
+
+    def next_token(self):
+        self.pos += 1
+
+def main():
+    expression = &quot;x + 3 * ( y - 2 ) / z&quot;
+    tokens = lexical_analysis(expression)
+    print(&quot;Tokens:&quot;, tokens)
+
+    parser = Parser(tokens)
+    ast = parser.parse()
+    print(&quot;AST:&quot;, ast)
+
+if __name__ == &quot;__main__&quot;:
+    main()
+</code></pre>
+<h3 id="teste-esperado_1">Teste esperado</h3>
+<p>Para a expressão <code>"x + 3 * ( y - 2 ) / z"</code>, a</p>
+<p>saída esperada seria:</p>
+<pre><code class="language-python">Tokens: [('ID', 'x'), ('PLUS', '+'), ('NUMBER', '3'), ('TIMES', '*'), 
+         ('LPAREN', '('), ('ID', 'y'), ('MINUS', '-'), ('NUMBER', '2'), 
+         ('RPAREN', ')'), ('DIVIDE', '/'), ('ID', 'z')]
+AST: ('PLUS', ('ID', 'x'), ('DIVIDE', ('TIMES', ('NUMBER', '3'), ('MINUS', ('ID', 'y'), ('NUMBER', '2'))), ('ID', 'z')))
+</code></pre>
+<p>Boa sorte e divirta-se resolvendo o desafio!</p>
+<h1 id="resumao">Resumão!</h1>
+<h2 id="analise-de-compilacao-lexica-sintatica-e-semantica">Análise de Compilação: Léxica, Sintática e Semântica</h2>
+<h2 id="introducao_1">Introdução</h2>
+<p>O processo de compilação de um programa pode ser dividido em várias fases distintas. Cada fase tem um papel crucial na transformação do código fonte em código executável. As três principais fases são a análise léxica, a análise sintática e a análise semântica.</p>
+<h2 id="analise-lexica">Análise Léxica</h2>
+<h3 id="objetivo">Objetivo</h3>
+<p>A análise léxica, também conhecida como lexing ou tokenização, é a primeira etapa do processo de compilação. Seu objetivo é converter a sequência de caracteres do código fonte em uma sequência de tokens, que são as menores unidades significativas do código.</p>
+<h3 id="componentes">Componentes</h3>
+<ul>
+<li><strong>Tabela de símbolos</strong>: Armazena informações sobre identificadores e palavras-chave.</li>
+<li><strong>Regras léxicas</strong>: Definem padrões para reconhecer tokens usando expressões regulares.</li>
+<li><strong>Autômatos Finitos</strong>: Implementam as regras léxicas para varrer a entrada e produzir tokens.</li>
+</ul>
+<h3 id="exemplo-de-tokens_1">Exemplo de Tokens</h3>
+<p>Para o código <code>int a = 10;</code>, os tokens podem ser: <code>int</code>, <code>a</code>, <code>=</code>, <code>10</code>, <code>;</code>.</p>
+<h3 id="implementacao">Implementação</h3>
+<pre><code class="language-python">import re
+
+def lexical_analysis(expression):
+    token_specification = [
+        ('NUMBER',    r'\d+'),
+        ('ID',        r'[a-zA-Z_][a-zA-Z0-9_]*'),
+        ('PLUS',      r'\+'),
+        ('MINUS',     r'-'),
+        ('TIMES',     r'\*'),
+        ('DIVIDE',    r'/'),
+        ('LPAREN',    r'\('),
+        ('RPAREN',    r'\)'),
+        ('SKIP',      r'[ \t]+'),
+        ('MISMATCH',  r'.'),
+    ]
+
+    tok_regex = '|'.join(f'(?P&lt;{pair[0]}&gt;{pair[1]})' for pair in token_specification)
+    get_token = re.compile(tok_regex).match
+    line = expression.strip()
+    pos = 0
+    tokens = []
+
+    while pos &lt; len(line):
+        match = get_token(line, pos)
+        if match is None:
+            raise RuntimeError(f'Erro léxico em {line[pos]}')
+        pos = match.end()
+        token_type = match.lastgroup
+        if token_type in ('NUMBER', 'ID'):
+            value = match.group(token_type)
+            tokens.append((token_type, value))
+        elif token_type != 'SKIP':
+            tokens.append((token_type, match.group(token_type)))
+
+    return tokens
+</code></pre>
+<h2 id="analise-sintatica_1">Análise Sintática</h2>
+<h3 id="objetivo_1">Objetivo</h3>
+<p>A análise sintática, ou parsing, é a segunda etapa do processo de compilação. Seu objetivo é analisar a sequência de tokens para construir uma estrutura hierárquica, como uma árvore de análise sintática (AST), que representa a estrutura gramatical do código.</p>
+<h3 id="componentes_1">Componentes</h3>
+<ul>
+<li><strong>Gramática da linguagem</strong>: Conjunto de regras que define a estrutura da linguagem.</li>
+<li><strong>Analisador léxico</strong>: Componente que fornece a sequência de tokens.</li>
+<li><strong>Algoritmo de parsing</strong>: Constrói a árvore de análise a partir dos tokens.</li>
+</ul>
+<h3 id="exemplo-de-gramatica">Exemplo de Gramática</h3>
+<p>Para expressões aritméticas simples:
+- Expressão → Termo {("+" | "-") Termo}
+- Termo → Fator {("*" | "/") Fator}
+- Fator → Número | Identificador | "(" Expressão ")"</p>
+<h3 id="implementacao_1">Implementação</h3>
+<pre><code class="language-python">class Parser:
+    def __init__(self, tokens):
+        self.tokens = tokens
+        self.pos = 0
+
+    def parse(self):
+        return self.expression()
+
+    def expression(self):
+        node = self.term()
+        while self.current_token() in ('PLUS', 'MINUS'):
+            token = self.current_token()
+            self.next_token()
+            node = (token, node, self.term())
+        return node
+
+    def term(self):
+        node = self.factor()
+        while self.current_token() in ('TIMES', 'DIVIDE'):
+            token = self.current_token()
+            self.next_token()
+            node = (token, node, self.factor())
+        return node
+
+    def factor(self):
+        token = self.current_token()
+        if token == 'NUMBER':
+            self.next_token()
+            return ('NUMBER', self.current_value())
+        elif token == 'ID':
+            self.next_token()
+            return ('ID', self.current_value())
+        elif token == 'LPAREN':
+            self.next_token()
+            node = self.expression()
+            if self.current_token() == 'RPAREN':
+                self.next_token()
+                return node
+            else:
+                raise RuntimeError(&quot;Erro: ')' esperado&quot;)
+        else:
+            raise RuntimeError(f&quot;Erro: Token inesperado {token}&quot;)
+
+    def current_token(self):
+        return self.tokens[self.pos][0] if self.pos &lt; len(self.tokens) else None
+
+    def current_value(self):
+        return self.tokens[self.pos - 1][1]
+
+    def next_token(self):
+        self.pos += 1
+
+# Função principal para realizar a análise léxica e sintática
+def main():
+    expression = &quot;x + 3 * ( y - 2 ) / z&quot;
+    tokens = lexical_analysis(expression)
+    print(&quot;Tokens:&quot;, tokens)
+
+    parser = Parser(tokens)
+    ast = parser.parse()
+    print(&quot;AST:&quot;, ast)
+
+if __name__ == &quot;__main__&quot;:
+    main()
+</code></pre>
+<h2 id="analise-semantica">Análise Semântica</h2>
+<h3 id="objetivo_2">Objetivo</h3>
+<p>A análise semântica é a terceira etapa do processo de compilação. Seu objetivo é verificar a correção semântica do programa, assegurando que ele faz sentido dentro do contexto da linguagem. Isso inclui verificação de tipos, escopo de variáveis e outras regras semânticas.</p>
+<h3 id="componentes_2">Componentes</h3>
+<ul>
+<li><strong>Tabela de símbolos</strong>: Armazena informações sobre identificadores, seus tipos e escopos.</li>
+<li><strong>Regras semânticas</strong>: Definem as verificações necessárias para garantir a correção semântica do código.</li>
+</ul>
+<h3 id="processo">Processo</h3>
+<ol>
+<li><strong>Verificação de tipos</strong>: Assegurar que as operações são realizadas entre tipos compatíveis.</li>
+<li><strong>Resolução de identificadores</strong>: Garantir que todas as variáveis e funções estão declaradas antes de serem usadas.</li>
+<li><strong>Análise de escopo</strong>: Verificar que as variáveis estão acessíveis apenas dentro do seu escopo.</li>
+</ol>
+<h3 id="exemplo-de-verificacao-de-tipos">Exemplo de Verificação de Tipos</h3>
+<p>Para a expressão <code>x + 3</code>, onde <code>x</code> é uma variável do tipo <code>int</code>:</p>
+<pre><code class="language-python">class SemanticAnalyzer:
+    def __init__(self, ast, symbol_table):
+        self.ast = ast
+        self.symbol_table = symbol_table
+
+    def analyze(self):
+        return self._analyze_node(self.ast)
+
+    def _analyze_node(self, node):
+        if isinstance(node, tuple):
+            op = node[0]
+            left = self._analyze_node(node[1])
+            right = self._analyze_node(node[2])
+            if op in ('PLUS', 'MINUS', 'TIMES', 'DIVIDE'):
+                if left != 'int' or right != 'int':
+                    raise RuntimeError(f&quot;Erro semântico: operação {op} inválida entre {left} e {right}&quot;)
+                return 'int'
+        elif node[0] == 'NUMBER':
+            return 'int'
+        elif node[0] == 'ID':
+            identifier = node[1]
+            if identifier not in self.symbol_table:
+                raise RuntimeError(f&quot;Erro semântico: variável {identifier} não declarada&quot;)
+            return self.symbol_table[identifier]
+        else:
+            raise RuntimeError(f&quot;Erro semântico: nó inválido {node}&quot;)
+
+# Função principal para realizar a análise semântica
+def main():
+    expression = &quot;x + 3 * ( y - 2 ) / z&quot;
+    tokens = lexical_analysis(expression)
+    print(&quot;Tokens:&quot;, tokens)
+
+    parser = Parser(tokens)
+    ast = parser.parse()
+    print(&quot;AST:&quot;, ast)
+
+    symbol_table = {'x': 'int', 'y': 'int', 'z': 'int'}
+    analyzer = SemanticAnalyzer(ast, symbol_table)
+    analyzer.analyze()
+    print(&quot;Análise semântica concluída com sucesso&quot;)
+
+if __name__ == &quot;__main__&quot;:
+    main()
+</code></pre>
+<h2 id="conclusao">Conclusão</h2>
+<p>A análise léxica, sintática e semântica são etapas fundamentais do processo de compilação, cada uma desempenhando um papel crucial na transformação do código fonte em um programa executável. A análise léxica converte o código em tokens, a análise sintática constrói a estrutura gramatical e a análise semântica verifica a correção contextual do programa. Compreender essas etapas é essencial para o desenvolvimento de compiladores e intérpretes eficientes.</p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../.."</script>
+    
+    <script src="../../js/base.js"></script>
+    <script src="../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

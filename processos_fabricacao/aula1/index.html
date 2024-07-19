@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+
+    
+    <title>Aula: Processos de Fabricação e Usinagem - Aulas Afonso</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../css/base.min.css" rel="stylesheet">
+    <link href="../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../..">Aulas Afonso</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../..">Bem Vindo</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Backend <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../backend/10_filas_rabbitmq/">Filas com RabbitMQ e Controle Assíncrono de Requisições</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/11_tdd_testes_unitarios/">TDD e Testes Unitários</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/12_deploy_render/">Deploy com Render (Web Service + PostgreSQL)</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/13_autenticacao_criptografia_usuarios/">Autenticação com Criptografia de Usuários</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/14_revisao_direcionamento_projetos/">Revisão e Direcionamento de Projetos</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/15_avaliacao_semestral/">Avaliação Semestral</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/1_analise_requisitos_viabilidade/">Aula 1 - Análise de Requisitos e Viabilidade: Uma Aula Avançada com Desafio Prático</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/2_gitflow_conventional_commits/">Aula 2 - Gitflow e Conventional Commits</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/3_virtualizacao_node_docker/">Virtualização, Node e Docker</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/4_modelagem_bd_models/">Modelagem de Banco de Dados e Models</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/5_rotas_controllers/">Rotas e Controllers</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/6_atividade_avaliativa_individual/">Atividade Avaliativa Individual</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/7_queries_sql_avancadas/">Queries SQLs Avançadas em Banco de Dados</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/8_helpers_camadas_auxiliares_mvc/">Helpers e Camadas Auxiliares do MVC</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/9_avaliacao_multidisciplinar/">Avaliação Multidisciplinar</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/home/">Backend</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Compiladores <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../compiladores/aula1/">Aula 1 - Prazer, Compiladores! 🤝👾</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../compiladores/aula2/">Aula 2 - Compilação e Interação: Do Código ao Executável 💻🔧</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../compiladores/aula3/">Aula 3 - Análise Sintática</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../compiladores/aula4/">Aula 4 - Análise Semântica em Compiladores</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../compiladores/home/">Home - Bem-vindos ao Módulo de Compiladores!</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Concretoi <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../concretoi/home/">Concreto I</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Concretoii <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../concretoii/home/">Concreto II</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Processos fabricacao <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li class="active">
+    <a href="./">Aula: Processos de Fabricação e Usinagem</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../aula2/">Aula 2: Usinagem: Uma Jornada Prática</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../aula3/">Aula 3: Soldagem e Conformação</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../aula4/">Aula 4: Processos de Soldagem</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../home/">Processos de Fabricação</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../concretoii/home/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../aula2/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#aula-processos-de-fabricacao-e-usinagem">Aula: Processos de Fabricação e Usinagem</a></li>
+            <li class="second-level"><a href="#introducao">Introdução</a></li>
+                
+            <li class="second-level"><a href="#objetivos-da-aula">Objetivos da Aula</a></li>
+                
+            <li class="second-level"><a href="#conteudo-programatico">Conteúdo Programático</a></li>
+                
+            <li class="second-level"><a href="#1-historia-dos-processos-de-fabricacao">1. História dos Processos de Fabricação</a></li>
+                
+                <li class="third-level"><a href="#linha-do-tempo">Linha do Tempo</a></li>
+                <li class="third-level"><a href="#evolucao-dos-materiais-e-maquinas">Evolução dos Materiais e Máquinas</a></li>
+            <li class="second-level"><a href="#2-classificacao-dos-processos-de-fabricacao">2. Classificação dos Processos de Fabricação</a></li>
+                
+                <li class="third-level"><a href="#segundo-a-din-8580">Segundo a DIN 8580</a></li>
+            <li class="second-level"><a href="#3-introducao-aos-processos-de-usinagem">3. Introdução aos Processos de Usinagem</a></li>
+                
+                <li class="third-level"><a href="#conceito">Conceito</a></li>
+                <li class="third-level"><a href="#importancia-na-industria">Importância na Indústria</a></li>
+                <li class="third-level"><a href="#tipos-de-usinagem">Tipos de Usinagem</a></li>
+            <li class="second-level"><a href="#4-usinagem-definicao-e-importancia">4. Usinagem: Definição e Importância</a></li>
+                
+                <li class="third-level"><a href="#definicao">Definição</a></li>
+                <li class="third-level"><a href="#importancia">Importância</a></li>
+            <li class="second-level"><a href="#5-ferramentas-de-usinagem">5. Ferramentas de Usinagem</a></li>
+                
+                <li class="third-level"><a href="#ferramentas-monocortantes">Ferramentas Monocortantes</a></li>
+                <li class="third-level"><a href="#ferramentas-multicortantes">Ferramentas Multicortantes</a></li>
+            <li class="second-level"><a href="#6-exemplos-de-usinagem">6. Exemplos de Usinagem</a></li>
+                
+                <li class="third-level"><a href="#usinagem-com-geometria-de-ferramenta-definida">Usinagem com Geometria de Ferramenta Definida</a></li>
+                <li class="third-level"><a href="#usinagem-com-ferramenta-de-geometria-nao-definida">Usinagem com Ferramenta de Geometria Não Definida</a></li>
+                <li class="third-level"><a href="#usinagem-nao-convencional">Usinagem Não Convencional</a></li>
+            <li class="second-level"><a href="#7-mecanismos-da-formacao-de-cavaco">7. Mecanismos da Formação de Cavaco</a></li>
+                
+                <li class="third-level"><a href="#conceito-de-cavaco">Conceito de Cavaco</a></li>
+                <li class="third-level"><a href="#tipos-de-cavaco">Tipos de Cavaco</a></li>
+                <li class="third-level"><a href="#fatores-que-influenciam-a-formacao-de-cavaco">Fatores que Influenciam a Formação de Cavaco</a></li>
+                <li class="third-level"><a href="#importancia-da-formacao-de-cavaco">Importância da Formação de Cavaco</a></li>
+            <li class="second-level"><a href="#grupo-de-discussao-contem-experiencias-de-voces-com-as-perguntas-no-formulario-a-seguir">Grupo de Discussão! Contem experiências de vocês com as perguntas no formulário a seguir</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="aula-processos-de-fabricacao-e-usinagem">Aula: Processos de Fabricação e Usinagem</h1>
+<h2 id="introducao">Introdução</h2>
+<p>Os processos de fabricação são fundamentais para a transformação de matérias-primas em produtos acabados. A usinagem, um dos processos mais populares, envolve a remoção de material para dar forma e acabamento a peças. Nesta aula, exploraremos a história, classificação e importância desses processos na indústria.</p>
+<h2 id="objetivos-da-aula">Objetivos da Aula</h2>
+<ol>
+<li>Compreender a relação entre manufatura e fabricação.</li>
+<li>Identificar os principais marcos históricos dos processos de fabricação.</li>
+<li>Classificar os processos de fabricação segundo a norma DIN 8580.</li>
+<li>Definir usinagem e cavaco.</li>
+<li>Exemplificar diferentes tipos de usinagem.</li>
+<li>Entender os mecanismos da formação de cavaco.</li>
+</ol>
+<h2 id="conteudo-programatico">Conteúdo Programático</h2>
+<ol>
+<li><strong>História dos Processos de Fabricação</strong></li>
+<li><strong>Classificação dos Processos de Fabricação</strong></li>
+<li><strong>Introdução aos Processos de Usinagem</strong></li>
+<li><strong>Usinagem: Definição e Importância</strong></li>
+<li><strong>Ferramentas de Usinagem</strong></li>
+<li><strong>Exemplos de Usinagem</strong></li>
+<li><strong>Mecanismos da Formação de Cavaco</strong></li>
+</ol>
+<h2 id="1-historia-dos-processos-de-fabricacao">1. História dos Processos de Fabricação</h2>
+<h3 id="linha-do-tempo">Linha do Tempo</h3>
+<ul>
+<li><strong>-5000 AC</strong>: Processo de fundição.</li>
+<li><strong>-1000 AC</strong>: Furação de corda puxada e surgimento dos primeiros tornos.</li>
+<li><strong>Séc. XVIII</strong>: Primeiras obras sobre torneamento.</li>
+<li><strong>1774</strong>: Mandriladora de cilindros para máquinas a vapor.</li>
+<li><strong>1797</strong>: Primeiro torno com avanço automático.</li>
+<li><strong>1860</strong>: Surgimento da retificadora.</li>
+<li><strong>1940</strong>: Processos não convencionais de usinagem.</li>
+<li><strong>1978</strong>: Primeiro torno CNC.</li>
+</ul>
+<h3 id="evolucao-dos-materiais-e-maquinas">Evolução dos Materiais e Máquinas</h3>
+<p>A Revolução Industrial impulsionou o desenvolvimento de materiais para ferramentas e máquinas operatrizes, como a mandriladora e o torno automático.</p>
+<h2 id="2-classificacao-dos-processos-de-fabricacao">2. Classificação dos Processos de Fabricação</h2>
+<h3 id="segundo-a-din-8580">Segundo a DIN 8580</h3>
+<p>A norma DIN 8580 classifica os processos de fabricação em seis grupos principais:</p>
+<ol>
+<li><strong>Formação Primária</strong>: Mudança de forma inicial do material.</li>
+<li><strong>Conformação</strong>: Reordenamento de partículas do material.</li>
+<li><strong>Usinagem</strong>: Eliminação de partículas do material.</li>
+<li><strong>União</strong>: Adição de partículas de material.</li>
+<li><strong>Revestimento</strong>: Aplicação de camadas sobre o material.</li>
+<li><strong>Alteração de Propriedades Mecânicas</strong>: Modificação das propriedades do material.</li>
+</ol>
+<p><img alt="image" src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1719885475/Captura_de_tela_2024-07-01_225551_u4ht2s.png" />
+<img alt="image2" src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1719885544/Captura_de_tela_2024-07-01_225856_xh3olm.png" /></p>
+<h2 id="3-introducao-aos-processos-de-usinagem">3. Introdução aos Processos de Usinagem</h2>
+<h3 id="conceito">Conceito</h3>
+<p>Os processos de usinagem são métodos de fabricação que envolvem a remoção de material de uma peça bruta para obter a forma desejada. A usinagem é realizada por meio de ferramentas de corte que removem material na forma de cavacos. Este processo é essencial para a fabricação de componentes com alta precisão dimensional e acabamento superficial.</p>
+<h3 id="importancia-na-industria">Importância na Indústria</h3>
+<p>A usinagem desempenha um papel fundamental em diversos setores industriais, como automotivo, aeroespacial, médico e de manufatura geral. Ela permite a produção de peças complexas com tolerâncias rigorosas e superfícies de alta qualidade, que são essenciais para o funcionamento eficiente e seguro de máquinas e equipamentos.</p>
+<h3 id="tipos-de-usinagem">Tipos de Usinagem</h3>
+<p>Os processos de usinagem podem ser classificados em dois grandes grupos:</p>
+<ol>
+<li><strong>Usinagem com Geometria de Ferramenta Definida</strong>: Inclui operações como torneamento, fresamento, furação e brochamento, onde a geometria da ferramenta de corte é bem definida.</li>
+<li><strong>Usinagem com Ferramenta de Geometria Não Definida</strong>: Inclui operações como retificação, tamboramento e polimento, onde a geometria da ferramenta de corte não é claramente definida.</li>
+</ol>
+<h2 id="4-usinagem-definicao-e-importancia">4. Usinagem: Definição e Importância</h2>
+<h3 id="definicao">Definição</h3>
+<p>Usinagem é o processo de remoção de material através da interferência entre uma ferramenta e a peça, onde a ferramenta deve ser mais dura e resistente que o material da peça.</p>
+<p><img alt="imagem3" src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1719885787/Captura_de_tela_2024-07-01_230004_mhyfti.png" /></p>
+<h3 id="importancia">Importância</h3>
+<ul>
+<li><strong>80%</strong> dos furos são realizados por usinagem.</li>
+<li><strong>100%</strong> dos processos de melhoria da qualidade superficial são feitos por usinagem.</li>
+<li><strong>70%</strong> das engrenagens para transmissão de potência.</li>
+<li><strong>90%</strong> dos componentes da indústria aeroespacial.</li>
+</ul>
+<h2 id="5-ferramentas-de-usinagem">5. Ferramentas de Usinagem</h2>
+<p><img alt="imag4" src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1719885824/Captura_de_tela_2024-07-01_230027_oltodw.png" /></p>
+<h3 id="ferramentas-monocortantes">Ferramentas Monocortantes</h3>
+<p>Ferramentas que possuem uma única aresta de corte, utilizadas para operações como torneamento e furação.</p>
+<h3 id="ferramentas-multicortantes">Ferramentas Multicortantes</h3>
+<p>Combinação de várias ferramentas monocortantes, utilizadas em operações como fresamento e brochamento.</p>
+<h2 id="6-exemplos-de-usinagem">6. Exemplos de Usinagem</h2>
+<h3 id="usinagem-com-geometria-de-ferramenta-definida">Usinagem com Geometria de Ferramenta Definida</h3>
+<ol>
+<li>Torneamento</li>
+<li>Fresamento</li>
+<li>Furação</li>
+<li>Brochamento</li>
+</ol>
+<h3 id="usinagem-com-ferramenta-de-geometria-nao-definida">Usinagem com Ferramenta de Geometria Não Definida</h3>
+<ol>
+<li>Retificação</li>
+<li>Tamboramento</li>
+<li>Polimento</li>
+</ol>
+<h3 id="usinagem-nao-convencional">Usinagem Não Convencional</h3>
+<ol>
+<li>Jato abrasivo</li>
+<li>Eletroerosão</li>
+<li>Corte a laser</li>
+</ol>
+<p><img alt="imagem5" src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1719885889/Captura_de_tela_2024-07-01_230058_hzii1e.png" /></p>
+<h2 id="7-mecanismos-da-formacao-de-cavaco">7. Mecanismos da Formação de Cavaco</h2>
+<h3 id="conceito-de-cavaco">Conceito de Cavaco</h3>
+<p>Cavaco é o material removido da peça durante o processo de usinagem. A formação de cavaco é um fenômeno complexo que envolve a deformação plástica do material da peça e a interação com a ferramenta de corte.</p>
+<h3 id="tipos-de-cavaco">Tipos de Cavaco</h3>
+<ol>
+<li><strong>Cavaco Contínuo</strong>: Formado em materiais dúcteis e em condições de corte favoráveis. Proporciona bom acabamento superficial.</li>
+<li><strong>Cavaco Cisalhado</strong>: Formado em materiais de média ductilidade. Caracteriza-se por uma aparência segmentada.</li>
+<li><strong>Cavaco Fragmentado</strong>: Formado em materiais frágeis ou em condições de corte desfavoráveis. Resulta em um acabamento superficial inferior.</li>
+</ol>
+<h3 id="fatores-que-influenciam-a-formacao-de-cavaco">Fatores que Influenciam a Formação de Cavaco</h3>
+<ol>
+<li><strong>Material da Peça</strong>: A ductilidade e a resistência do material influenciam o tipo de cavaco formado.</li>
+<li><strong>Geometria da Ferramenta</strong>: O ângulo de ataque e a aresta de corte da ferramenta afetam a formação do cavaco.</li>
+<li><strong>Condições de Corte</strong>: Velocidade de corte, avanço e profundidade de corte são parâmetros que influenciam a formação do cavaco.</li>
+<li><strong>Lubrificação e Refrigeração</strong>: O uso de fluidos de corte pode melhorar a formação de cavaco e o acabamento superficial.</li>
+</ol>
+<h3 id="importancia-da-formacao-de-cavaco">Importância da Formação de Cavaco</h3>
+<p>A compreensão dos mecanismos de formação de cavaco é essencial para otimizar os processos de usinagem, melhorar a vida útil das ferramentas e garantir a qualidade das peças usinadas.</p>
+<h2 id="grupo-de-discussao-contem-experiencias-de-voces-com-as-perguntas-no-formulario-a-seguir">Grupo de Discussão! Contem experiências de vocês com as perguntas no formulário a seguir</h2>
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSeoq8JuYbVcpLY2SfepR2Qgev6zInTSvMfZxOdZzxR_k4IGUg/viewform?usp=sf_link" class="btn btn-primary" target="_blank">
+  <i class="fas fa-download"></i> Formulário
+</a>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../.."</script>
+    
+    <script src="../../js/base.js"></script>
+    <script src="../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

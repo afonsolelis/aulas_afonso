@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+
+    
+    <title>Aula 3: Soldagem e Conformação - Aulas Afonso</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../css/base.min.css" rel="stylesheet">
+    <link href="../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../..">Aulas Afonso</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../..">Bem Vindo</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Backend <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../backend/10_filas_rabbitmq/">Filas com RabbitMQ e Controle Assíncrono de Requisições</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/11_tdd_testes_unitarios/">TDD e Testes Unitários</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/12_deploy_render/">Deploy com Render (Web Service + PostgreSQL)</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/13_autenticacao_criptografia_usuarios/">Autenticação com Criptografia de Usuários</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/14_revisao_direcionamento_projetos/">Revisão e Direcionamento de Projetos</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/15_avaliacao_semestral/">Avaliação Semestral</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/1_analise_requisitos_viabilidade/">Aula 1 - Análise de Requisitos e Viabilidade: Uma Aula Avançada com Desafio Prático</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/2_gitflow_conventional_commits/">Aula 2 - Gitflow e Conventional Commits</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/3_virtualizacao_node_docker/">Virtualização, Node e Docker</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/4_modelagem_bd_models/">Modelagem de Banco de Dados e Models</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/5_rotas_controllers/">Rotas e Controllers</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/6_atividade_avaliativa_individual/">Atividade Avaliativa Individual</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/7_queries_sql_avancadas/">Queries SQLs Avançadas em Banco de Dados</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/8_helpers_camadas_auxiliares_mvc/">Helpers e Camadas Auxiliares do MVC</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/9_avaliacao_multidisciplinar/">Avaliação Multidisciplinar</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/home/">Backend</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Compiladores <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../compiladores/aula1/">Aula 1 - Prazer, Compiladores! 🤝👾</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../compiladores/aula2/">Aula 2 - Compilação e Interação: Do Código ao Executável 💻🔧</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../compiladores/aula3/">Aula 3 - Análise Sintática</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../compiladores/aula4/">Aula 4 - Análise Semântica em Compiladores</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../compiladores/home/">Home - Bem-vindos ao Módulo de Compiladores!</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Concretoi <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../concretoi/home/">Concreto I</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Concretoii <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../concretoii/home/">Concreto II</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Processos fabricacao <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../aula1/">Aula: Processos de Fabricação e Usinagem</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../aula2/">Aula 2: Usinagem: Uma Jornada Prática</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Aula 3: Soldagem e Conformação</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../aula4/">Aula 4: Processos de Soldagem</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../home/">Processos de Fabricação</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../aula2/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../aula4/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#aula-3-soldagem-e-conformacao">Aula 3: Soldagem e Conformação</a></li>
+        <li class="first-level "><a href="#ou-seja">Ou Seja</a></li>
+            <li class="second-level"><a href="#reconhecer-o-processo-de-soldagem">Reconhecer o Processo de Soldagem</a></li>
+                
+            <li class="second-level"><a href="#identificar-os-fenomenos-fisico-quimicos-que-ocorrem-na-soldagem">Identificar os Fenômenos Físico-Químicos que Ocorrem na Soldagem</a></li>
+                
+            <li class="second-level"><a href="#escolher-o-processo-de-soldagem-adequado-para-diferentes-tipos-de-materiais">Escolher o Processo de Soldagem Adequado para Diferentes Tipos de Materiais</a></li>
+                
+            <li class="second-level"><a href="#soldagem-de-termoplasticos">Soldagem de Termoplásticos</a></li>
+                
+        <li class="first-level "><a href="#conformacao-mecanica">Conformação Mecânica</a></li>
+        <li class="first-level "><a href="#video-de-conformacao-em-ceramicos-de-argila">Vídeo de Conformação em Cerâmicos de Argila</a></li>
+        <li class="first-level "><a href="#video-sobre-trefilacao">Vídeo sobre Trefilação</a></li>
+        <li class="first-level "><a href="#dobradeia-automatica-de-estribos">Dobradeia Automática de Estribos</a></li>
+            <li class="second-level"><a href="#objetivos-da-unidade-de-aprendizagem">Objetivos da Unidade de Aprendizagem</a></li>
+                
+            <li class="second-level"><a href="#principios-dos-processos-de-conformacao-mecanica">Princípios dos Processos de Conformação Mecânica</a></li>
+                
+                <li class="third-level"><a href="#classificacoes-dos-processos-de-conformacao-mecanica">Classificações dos Processos de Conformação Mecânica</a></li>
+            <li class="second-level"><a href="#conformacao-direta-vs-conformacao-indireta">Conformação Direta vs. Conformação Indireta</a></li>
+                
+                <li class="third-level"><a href="#conformacao-direta">Conformação Direta</a></li>
+                <li class="third-level"><a href="#conformacao-indireta">Conformação Indireta</a></li>
+            <li class="second-level"><a href="#descricao-dos-processos-de-conformacao-mecanica">Descrição dos Processos de Conformação Mecânica</a></li>
+                
+                <li class="third-level"><a href="#laminacao">Laminação</a></li>
+                <li class="third-level"><a href="#extrusao">Extrusão</a></li>
+                <li class="third-level"><a href="#trefilacao">Trefilação</a></li>
+                <li class="third-level"><a href="#estampagem">Estampagem</a></li>
+                <li class="third-level"><a href="#forjamento">Forjamento</a></li>
+        <li class="first-level "><a href="#fabrica-lego">Fábrica Lego</a></li>
+            <li class="second-level"><a href="#referencias">Referências</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="aula-3-soldagem-e-conformacao">Aula 3: Soldagem e Conformação</h1>
+<p>Os processos de conformação são utilizados para moldar materiais sem remover material. Nesta aula, veremos os principais métodos de conformação, incluindo forjamento, laminação e extrusão.</p>
+<hr />
+<div class="carousel-container">
+    <input type="radio" name="carousel" id="radio1" checked>
+    <input type="radio" name="carousel" id="radio2">
+    <input type="radio" name="carousel" id="radio3">
+    <input type="radio" name="carousel" id="radio4">
+    <input type="radio" name="carousel" id="radio5">
+    <input type="radio" name="carousel" id="radio6">
+    <input type="radio" name="carousel" id="radio7">
+    <input type="radio" name="carousel" id="radio8">
+    <input type="radio" name="carousel" id="radio9">
+    <input type="radio" name="carousel" id="radio10">
+    <input type="radio" name="carousel" id="radio11">
+    <input type="radio" name="carousel" id="radio12">
+
+    <div class="carousel-slide">
+        <img src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1721147862/Slide1_enuvga.jpg" alt="Slide 1">
+        <img src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1721148040/Slide2_sfieoh.jpg" alt="Slide 2">
+        <img src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1721148122/Slide3_uvmps4.jpg" alt="Slide 3">
+        <img src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1721148140/Slide4_lb9nxp.jpg" alt="Slide 4">
+        <img src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1721148152/Slide5_y1b1u2.jpg" alt="Slide 5">
+        <img src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1721148166/Slide6_e5guew.jpg" alt="Slide 6">
+        <img src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1721148185/Slide7_horb3i.jpg" alt="Slide 7">
+        <img src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1721148199/Slide8_cpg2ub.jpg" alt="Slide 8">
+        <img src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1721148219/Slide9_x5arl5.jpg" alt="Slide 9">
+        <img src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1721148232/Slide10_zizbbd.jpg" alt="Slide 10">
+        <img src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1721148244/Slide11_ulsu8o.jpg" alt="Slide 11">
+        <img src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1721148262/Slide12_lpqg6j.jpg" alt="Slide 12">
+    </div>
+
+    <div class="carousel-navigation">
+        <label for="radio1"></label>
+        <label for="radio2"></label>
+        <label for="radio3"></label>
+        <label for="radio4"></label>
+        <label for="radio5"></label>
+        <label for="radio6"></label>
+        <label for="radio7"></label>
+        <label for="radio8"></label>
+        <label for="radio9"></label>
+        <label for="radio10"></label>
+        <label for="radio11"></label>
+        <label for="radio12"></label>
+    </div>
+</div>
+<style>
+    .carousel-container {
+        position: relative;
+        max-width: 800px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .carousel-slide {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-slide img {
+        width: 100%;
+    }
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    .carousel-navigation {
+        position: absolute;
+        width: 100%;
+        bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-navigation label {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #bbb;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    input:checked + .carousel-slide {
+        transform: translateX(0);
+    }
+
+    #radio2:checked ~ .carousel-slide {
+        transform: translateX(-100%);
+    }
+
+    #radio3:checked ~ .carousel-slide {
+        transform: translateX(-200%);
+    }
+
+    #radio4:checked ~ .carousel-slide {
+        transform: translateX(-300%);
+    }
+
+    #radio5:checked ~ .carousel-slide {
+        transform: translateX(-400%);
+    }
+
+    #radio6:checked ~ .carousel-slide {
+        transform: translateX(-500%);
+    }
+
+    #radio7:checked ~ .carousel-slide {
+        transform: translateX(-600%);
+    }
+
+    #radio8:checked ~ .carousel-slide {
+        transform: translateX(-700%);
+    }
+
+    #radio9:checked ~ .carousel-slide {
+        transform: translateX(-800%);
+    }
+
+    #radio10:checked ~ .carousel-slide {
+        transform: translateX(-900%);
+    }
+
+    #radio11:checked ~ .carousel-slide {
+        transform: translateX(-1000%);
+    }
+
+    #radio12:checked ~ .carousel-slide {
+        transform: translateX(-1100%);
+    }
+
+    #radio13:checked ~ .carousel-slide {
+        transform: translateX(-1200%);
+    }
+
+    #radio14:checked ~ .carousel-slide {
+        transform: translateX(-1300%);
+    }
+
+    #radio15:checked ~ .carousel-slide {
+        transform: translateX(-1400%);
+    }
+
+    #radio16:checked ~ .carousel-slide {
+        transform: translateX(-1400%);
+    }
+
+    #radio17:checked ~ .carousel-slide {
+        transform: translateX(-1400%);
+    }
+</style>
+<hr />
+<h1 id="ou-seja">Ou Seja</h1>
+<h2 id="reconhecer-o-processo-de-soldagem">Reconhecer o Processo de Soldagem</h2>
+<p>Soldagem é o processo de união de materiais, geralmente metais ou termoplásticos, através da fusão. Durante a soldagem, as partes a serem unidas são aquecidas até o ponto de fusão, e um material de preenchimento é adicionado para formar uma junta sólida ao esfriar.</p>
+<p>Existem vários tipos de processos de soldagem, incluindo:</p>
+<ul>
+<li><strong>Soldagem a arco</strong>: Utiliza um arco elétrico para derreter o material de base e o material de enchimento.</li>
+<li><strong>Soldagem a gás</strong>: Utiliza uma chama de gás (normalmente acetileno e oxigênio) para aquecer as partes a serem unidas.</li>
+<li><strong>Soldagem por resistência</strong>: Utiliza corrente elétrica para gerar calor através da resistência dos materiais a serem soldados.</li>
+<li><strong>Soldagem a laser</strong>: Utiliza um feixe de laser concentrado para derreter os materiais de base.</li>
+</ul>
+<p><a href="https://youtu.be/6Jj1nPwKr0E?si=WzTOAcY120rJS7by">Vídeo sobre tipos de soldas</a></p>
+<h2 id="identificar-os-fenomenos-fisico-quimicos-que-ocorrem-na-soldagem">Identificar os Fenômenos Físico-Químicos que Ocorrem na Soldagem</h2>
+<p>Durante o processo de soldagem, vários fenômenos físico-químicos ocorrem:</p>
+<ol>
+<li><strong>Fusão</strong>: O calor aplicado derrete os materiais de base e, às vezes, um material de enchimento, criando uma poça de fusão.</li>
+<li><strong>Solidificação</strong>: Após a remoção do calor, a poça de fusão solidifica, formando uma junta sólida.</li>
+<li><strong>Oxidação</strong>: A exposição ao ar pode causar oxidação nos materiais quentes, o que pode comprometer a qualidade da solda.</li>
+<li><strong>Difusão</strong>: Átomos de diferentes materiais podem difundir-se uns nos outros, afetando as propriedades da junta soldada.</li>
+<li><strong>Contração Térmica</strong>: Durante o resfriamento, a contração térmica pode causar tensões residuais e deformações na junta soldada.</li>
+</ol>
+<h2 id="escolher-o-processo-de-soldagem-adequado-para-diferentes-tipos-de-materiais">Escolher o Processo de Soldagem Adequado para Diferentes Tipos de Materiais</h2>
+<p>A escolha do processo de soldagem adequado depende dos materiais a serem soldados, suas propriedades e a aplicação final da solda. Aqui estão algumas diretrizes gerais:</p>
+<ul>
+<li><strong>Aço Carbono</strong>: Comumente soldado com soldagem a arco (MIG, TIG ou Stick), pois é versátil e oferece boas propriedades mecânicas.</li>
+<li><strong>Aço Inoxidável</strong>: Frequentemente soldado com processos TIG ou MIG, que proporcionam melhor controle sobre o calor e minimizam a contaminação.</li>
+<li><strong>Alumínio</strong>: Geralmente soldado com TIG ou MIG, pois esses processos permitem o controle preciso do calor necessário para evitar problemas como a porosidade.</li>
+<li><strong>Titânio</strong>: Normalmente soldado com TIG em atmosferas protegidas, devido à sua alta reatividade com oxigênio e nitrogênio em altas temperaturas.</li>
+<li><strong>Termoplásticos</strong>: Podem ser soldados com processos de soldagem a quente, como soldagem por fricção ou ultrassônica.</li>
+</ul>
+<p>Ao escolher o processo de soldagem, considere também fatores como espessura do material, configuração da junta, requisitos de qualidade e produtividade.</p>
+<h2 id="soldagem-de-termoplasticos">Soldagem de Termoplásticos</h2>
+<iframe width="700" height="520" src="https://www.youtube.com/embed/S15gUB-J_4o?si=Kw-TCml2mbXjG0tn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<hr />
+<h1 id="conformacao-mecanica">Conformação Mecânica</h1>
+<style>
+    .new-carousel-container {
+        position: relative;
+        max-width: 800px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .new-carousel-slide {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .new-carousel-slide img {
+        width: 100%;
+    }
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    .new-carousel-navigation {
+        position: absolute;
+        width: 100%;
+        bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .new-carousel-navigation label {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #bbb;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    input:checked + .new-carousel-slide {
+        transform: translateX(0);
+    }
+
+    #new-radio2:checked ~ .new-carousel-slide {
+        transform: translateX(-100%);
+    }
+
+    #new-radio3:checked ~ .new-carousel-slide {
+        transform: translateX(-200%);
+    }
+
+    #new-radio4:checked ~ .new-carousel-slide {
+        transform: translateX(-300%);
+    }
+
+    #new-radio5:checked ~ .new-carousel-slide {
+        transform: translateX(-400%);
+    }
+
+    #new-radio6:checked ~ .new-carousel-slide {
+        transform: translateX(-500%);
+    }
+
+    #new-radio7:checked ~ .new-carousel-slide {
+        transform: translateX(-600%);
+    }
+
+    #new-radio8:checked ~ .new-carousel-slide {
+        transform: translateX(-700%);
+    }
+
+    #new-radio9:checked ~ .new-carousel-slide {
+        transform: translateX(-800%);
+    }
+
+    #new-radio10:checked ~ .new-carousel-slide {
+        transform: translateX(-900%);
+    }
+
+    #new-radio11:checked ~ .new-carousel-slide {
+        transform: translateX(-1000%);
+    }
+
+    #new-radio12:checked ~ .new-carousel-slide {
+        transform: translateX(-1100%);
+    }
+
+    #new-radio13:checked ~ .new-carousel-slide {
+        transform: translateX(-1200%);
+    }
+
+    #new-radio14:checked ~ .new-carousel-slide {
+        transform: translateX(-1300%);
+    }
+</style>
+<div class="new-carousel-container">
+    <input type="radio" name="new-carousel" id="new-radio1" checked>
+    <input type="radio" name="new-carousel" id="new-radio2">
+    <input type="radio" name="new-carousel" id="new-radio3">
+    <input type="radio" name="new-carousel" id="new-radio4">
+    <input type="radio" name="new-carousel" id="new-radio5">
+    <input type="radio" name="new-carousel" id="new-radio6">
+    <input type="radio" name="new-carousel" id="new-radio7">
+    <input type="radio" name="new-carousel" id="new-radio8">
+    <input type="radio" name="new-carousel" id="new-radio9">
+    <input type="radio" name="new-carousel" id="new-radio10">
+    <input type="radio" name="new-carousel" id="new-radio11">
+    <input type="radio" name="new-carousel" id="new-radio12">
+    <input type="radio" name="new-carousel" id="new-radio13">
+    <input type="radio" name="new-carousel" id="new-radio14">
+
+    <div class="new-carousel-slide">
+        <img src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1721149755/Slide1_vqldd0.jpg" alt="Slide 1">
+        <img src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1721149776/Slide2_dpc76v.jpg" alt="Slide 2">
+        <img src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1721149785/Slide3_yzzctl.jpg" alt="Slide 3">
+        <img src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1721149793/Slide4_wmkfqy.jpg" alt="Slide 4">
+        <img src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1721149800/Slide5_x8hci1.jpg" alt="Slide 5">
+        <img src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1721149809/Slide6_n99hih.jpg" alt="Slide 6">
+        <img src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1721149818/Slide7_rmtsxn.jpg" alt="Slide 7">
+        <img src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1721149826/Slide8_oryciu.jpg" alt="Slide 8">
+        <img src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1721149833/Slide9_fhfjqc.jpg" alt="Slide 9">
+        <img src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1721149848/Slide10_wim1wj.jpg" alt="Slide 10">
+        <img src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1721149854/Slide11_sgjq06.jpg" alt="Slide 11">
+        <img src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1721149861/Slide12_hu76d8.jpg" alt="Slide 12">
+        <img src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1721149867/Slide13_vmbsdq.jpg" alt="Slide 13">
+        <img src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1721149872/Slide14_mybyh2.jpg" alt="Slide 14">
+    </div>
+
+    <div class="new-carousel-navigation">
+        <label for="new-radio1"></label>
+        <label for="new-radio2"></label>
+        <label for="new-radio3"></label>
+        <label for="new-radio4"></label>
+        <label for="new-radio5"></label>
+        <label for="new-radio6"></label>
+        <label for="new-radio7"></label>
+        <label for="new-radio8"></label>
+        <label for="new-radio9"></label>
+        <label for="new-radio10"></label>
+        <label for="new-radio11"></label>
+        <label for="new-radio12"></label>
+        <label for="new-radio13"></label>
+        <label for="new-radio14"></label>
+    </div>
+</div>
+
+<hr />
+<h1 id="video-de-conformacao-em-ceramicos-de-argila">Vídeo de Conformação em Cerâmicos de Argila</h1>
+<iframe width="700" height="520" src="https://www.youtube.com/embed/ZRIW6PdEEh8?si=8dVm-S83PC1gCk82" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<h1 id="video-sobre-trefilacao">Vídeo sobre Trefilação</h1>
+<iframe width="700" height="520" src="https://www.youtube.com/embed/WmwN36ZDvkw?si=LLtWxr0-ZLi6ikbE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<h1 id="dobradeia-automatica-de-estribos">Dobradeia Automática de Estribos</h1>
+<iframe width="700" height="520" src="https://www.youtube.com/embed/FdPRKGj6Zqw?si=9wEZoxNl65FqlPck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<h2 id="objetivos-da-unidade-de-aprendizagem">Objetivos da Unidade de Aprendizagem</h2>
+<p>Ao final desta Unidade de Aprendizagem, você deve apresentar os seguintes aprendizados:
+1. Analisar os princípios dos processos de conformação mecânica e as suas classificações.
+2. Diferenciar conformação direta de conformação indireta a partir das suas aplicações.
+3. Descrever os processos de laminação, extrusão, trefilação, estampagem e forjamento.</p>
+<h2 id="principios-dos-processos-de-conformacao-mecanica">Princípios dos Processos de Conformação Mecânica</h2>
+<p>A conformação mecânica é um conjunto de processos de fabricação onde materiais metálicos são transformados em produtos acabados ou semiacabados através da aplicação de forças mecânicas. Esses processos são amplamente utilizados na indústria devido à eficiência na produção de peças com propriedades mecânicas aprimoradas e redução de desperdícios de material.</p>
+<h3 id="classificacoes-dos-processos-de-conformacao-mecanica">Classificações dos Processos de Conformação Mecânica</h3>
+<p>Os processos de conformação mecânica podem ser classificados de várias maneiras, sendo as mais comuns:</p>
+<ul>
+<li><strong>Conformação a quente</strong>: Realizada acima da temperatura de recristalização do material, permitindo grandes deformações sem fraturas.</li>
+<li><strong>Conformação a frio</strong>: Realizada abaixo da temperatura de recristalização, resultando em aumento da resistência e dureza do material devido ao encruamento.</li>
+</ul>
+<h2 id="conformacao-direta-vs-conformacao-indireta">Conformação Direta vs. Conformação Indireta</h2>
+<h3 id="conformacao-direta">Conformação Direta</h3>
+<p>Na conformação direta, a força é aplicada diretamente na peça de trabalho, deformando-a na direção da força aplicada. Este método é simples e amplamente utilizado para processos de compressão.</p>
+<p><strong>Exemplos</strong>:
+- Laminação
+- Forjamento</p>
+<h3 id="conformacao-indireta">Conformação Indireta</h3>
+<p>Na conformação indireta, a força é aplicada de maneira indireta, geralmente através de uma ferramenta intermediária que transmite a força para a peça de trabalho, causando a deformação. Este método é eficiente para processos que envolvem tração ou flexão.</p>
+<p><strong>Exemplos</strong>:
+- Extrusão
+- Trefilação</p>
+<h2 id="descricao-dos-processos-de-conformacao-mecanica">Descrição dos Processos de Conformação Mecânica</h2>
+<h3 id="laminacao">Laminação</h3>
+<p>A laminação é um processo de deformação plástica no qual o material é passado entre cilindros que giram em sentidos opostos, reduzindo a sua espessura e aumentando seu comprimento. É amplamente utilizado para a produção de chapas, tiras e perfis metálicos.</p>
+<h3 id="extrusao">Extrusão</h3>
+<p>A extrusão é o processo onde o material é forçado a passar através de uma matriz, formando uma seção transversal específica. Pode ser realizada a quente ou a frio, sendo utilizada para produzir barras, tubos e perfis complexos.</p>
+<h3 id="trefilacao">Trefilação</h3>
+<p>A trefilação consiste em puxar o material através de uma matriz para reduzir sua seção transversal e aumentar seu comprimento. Este processo é comum na fabricação de fios e cabos metálicos, proporcionando alta precisão dimensional e acabamento superficial.</p>
+<h3 id="estampagem">Estampagem</h3>
+<p>A estampagem envolve a deformação do material por meio de ferramentas como punções e matrizes, para produzir peças com formas definidas. Este processo é usado para fabricar componentes automotivos, eletrodomésticos e outros produtos de consumo.</p>
+<h3 id="forjamento">Forjamento</h3>
+<p>O forjamento é um processo de conformação plástica onde o material é deformado por impacto ou pressão, geralmente a quente. Este método melhora as propriedades mecânicas do material e é utilizado para fabricar componentes estruturais, como eixos, engrenagens e ferramentas.</p>
+<hr />
+<h1 id="fabrica-lego">Fábrica Lego</h1>
+<iframe width="700" height="520" src="https://www.youtube.com/embed/3ZGQ7kEkBgo?si=IBIAzeG88FIDY9K4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<h3 id="referencias">Referências</h3>
+<ol>
+<li>"Manufacturing Processes for Engineering Materials" - Serope Kalpakjian, Steven R. Schmid</li>
+<li>"DeGarmo's Materials and Processes in Manufacturing" - J. T. Black, Ronald A. Kohser</li>
+<li>"Mechanical Metallurgy" - George E. Dieter</li>
+</ol></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../.."</script>
+    
+    <script src="../../js/base.js"></script>
+    <script src="../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

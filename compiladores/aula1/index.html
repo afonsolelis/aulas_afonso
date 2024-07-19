@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+
+    
+    <title>Aula 1 - Prazer, Compiladores! 🤝👾 - Aulas Afonso</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../css/base.min.css" rel="stylesheet">
+    <link href="../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../..">Aulas Afonso</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../..">Bem Vindo</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Backend <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../backend/10_filas_rabbitmq/">Filas com RabbitMQ e Controle Assíncrono de Requisições</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/11_tdd_testes_unitarios/">TDD e Testes Unitários</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/12_deploy_render/">Deploy com Render (Web Service + PostgreSQL)</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/13_autenticacao_criptografia_usuarios/">Autenticação com Criptografia de Usuários</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/14_revisao_direcionamento_projetos/">Revisão e Direcionamento de Projetos</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/15_avaliacao_semestral/">Avaliação Semestral</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/1_analise_requisitos_viabilidade/">Aula 1 - Análise de Requisitos e Viabilidade: Uma Aula Avançada com Desafio Prático</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/2_gitflow_conventional_commits/">Aula 2 - Gitflow e Conventional Commits</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/3_virtualizacao_node_docker/">Virtualização, Node e Docker</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/4_modelagem_bd_models/">Modelagem de Banco de Dados e Models</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/5_rotas_controllers/">Rotas e Controllers</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/6_atividade_avaliativa_individual/">Atividade Avaliativa Individual</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/7_queries_sql_avancadas/">Queries SQLs Avançadas em Banco de Dados</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/8_helpers_camadas_auxiliares_mvc/">Helpers e Camadas Auxiliares do MVC</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/9_avaliacao_multidisciplinar/">Avaliação Multidisciplinar</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../backend/home/">Backend</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Compiladores <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li class="active">
+    <a href="./">Aula 1 - Prazer, Compiladores! 🤝👾</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../aula2/">Aula 2 - Compilação e Interação: Do Código ao Executável 💻🔧</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../aula3/">Aula 3 - Análise Sintática</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../aula4/">Aula 4 - Análise Semântica em Compiladores</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../home/">Home - Bem-vindos ao Módulo de Compiladores!</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Concretoi <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../concretoi/home/">Concreto I</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Concretoii <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../concretoii/home/">Concreto II</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Processos fabricacao <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../processos_fabricacao/aula1/">Aula: Processos de Fabricação e Usinagem</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../processos_fabricacao/aula2/">Aula 2: Usinagem: Uma Jornada Prática</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../processos_fabricacao/aula3/">Aula 3: Soldagem e Conformação</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../processos_fabricacao/aula4/">Aula 4: Processos de Soldagem</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../processos_fabricacao/home/">Processos de Fabricação</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../backend/home/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../aula2/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#aula-1-prazer-compiladores">Aula 1 - Prazer, Compiladores! 🤝👾</a></li>
+            <li class="second-level"><a href="#a-importancia-dos-compiladores">A Importância dos Compiladores</a></li>
+                
+            <li class="second-level"><a href="#governo-dos-states-pede-para-parar-de-utilizar-c-e-assembly">Governo Dos States Pede para Parar de Utilizar C e Assembly</a></li>
+                
+                <li class="third-level"><a href="#fases-da-compilacao-uma-analise-detalhada">Fases da Compilação: Uma Análise Detalhada</a></li>
+                <li class="third-level"><a href="#funcionamento-de-um-compilador">Funcionamento de um Compilador</a></li>
+                <li class="third-level"><a href="#vamos-rodar-tudo-isso-em-python">Vamos rodar tudo isso em Python!</a></li>
+                <li class="third-level"><a href="#a-tabela-de-simbolos-organizando-a-informacao">A Tabela de Símbolos: Organizando a Informação</a></li>
+                <li class="third-level"><a href="#atividade-em-sala-de-aula">Atividade em Sala de Aula</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="aula-1-prazer-compiladores">Aula 1 - Prazer, Compiladores! 🤝👾</h1>
+<h3 id="a-importancia-dos-compiladores">A Importância dos Compiladores</h3>
+<p>Na primeira parte da aula, vimos que os compiladores são como tradutores que transformam código escrito em uma linguagem de programação (que humanos entendem) para uma linguagem que o computador entende (linguagem de máquina). </p>
+<p>Imagine que você quer ensinar um amigo a fazer um bolo, mas ele só fala japonês. Você precisaria de um tradutor para transmitir as instruções corretamente, certo? É exatamente isso que um compilador faz! Ele garante que o computador compreenda e execute as instruções do seu programa.</p>
+<h2 id="governo-dos-states-pede-para-parar-de-utilizar-c-e-assembly">Governo Dos States Pede para Parar de Utilizar C e Assembly</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_heEHuBxIBQ?si=WW0l6RF-0MkX1o65" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<h3 id="fases-da-compilacao-uma-analise-detalhada">Fases da Compilação: Uma Análise Detalhada</h3>
+<h4 id="para-um-problema">Para um problema:</h4>
+<p><img alt="imagem" src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1720096770/Captura_de_tela_2024-07-04_093903_wpi4k4.png" /></p>
+<p>A compilação, como vimos, é um processo dividido em etapas. Vamos entender melhor as três principais:</p>
+<ol>
+<li><strong>Análise Léxica (Fase do "dicionário"):</strong> Nesta fase, o compilador age como um leitor que examina o código letra por letra, agrupando-as em "palavras" com significado para a linguagem, como nomes de variáveis, palavras-chave (ex.: <code>if</code>, <code>else</code>, <code>for</code>) e operadores (+, -, *, /). Imagine um corretor ortográfico verificando cada palavra e sinal de pontuação do seu texto.</li>
+</ol>
+<p><img alt="imagem" src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1720096770/Captura_de_tela_2024-07-04_093809_mawn2u.png" /></p>
+<h4 id="analise-lexica-e-expressoes-regulares">Análise Léxica e Expressões Regulares</h4>
+<p>A Análise Léxica é a primeira fase de um compilador, responsável por dividir o código-fonte em uma sequência de tokens. Esses tokens representam as unidades básicas da linguagem, como palavras-chave, identificadores, números, operadores, entre outros.</p>
+<p>Para realizar a Análise Léxica, uma técnica comumente utilizada são as expressões regulares (regex). As expressões regulares são padrões que descrevem um conjunto de cadeias de caracteres. Elas permitem identificar e extrair partes específicas de um texto com base em regras definidas.</p>
+<p>As expressões regulares são compostas por caracteres literais e metacaracteres. Alguns metacaracteres comuns incluem:</p>
+<ul>
+<li><code>.</code> (ponto): Corresponde a qualquer caractere, exceto uma nova linha.</li>
+<li><code>*</code> (asterisco): Corresponde a zero ou mais ocorrências do caractere ou grupo anterior.</li>
+<li><code>+</code> (mais): Corresponde a uma ou mais ocorrências do caractere ou grupo anterior.</li>
+<li><code>?</code> (interrogação): Corresponde a zero ou uma ocorrência do caractere ou grupo anterior.</li>
+<li><code>^</code> (circunflexo): Corresponde ao início da linha.</li>
+<li><code>$</code> (cifrão): Corresponde ao final da linha.</li>
+<li><code>[]</code> (colchetes): Define um conjunto de caracteres. Por exemplo, <code>[aeiou]</code> corresponde a qualquer vogal.</li>
+</ul>
+<p>Além disso, existem classes de caracteres predefinidas, como:</p>
+<ul>
+<li><code>\d</code>: Corresponde a qualquer dígito (0-9).</li>
+<li><code>\w</code>: Corresponde a qualquer caractere alfanumérico (letra ou dígito).</li>
+<li><code>\s</code>: Corresponde a qualquer caractere de espaço em branco (espaço, tabulação, nova linha).</li>
+</ul>
+<p>Exemplo de expressão regular para identificar números inteiros:</p>
+<pre><code class="language-python">import re
+
+# Expressão regular para números inteiros
+pattern = r'\d+'
+
+# Texto de exemplo
+text = &quot;Eu tenho 25 anos e meu irmão tem 30 anos.&quot;
+
+# Encontrar todos os números inteiros no texto
+matches = re.findall(pattern, text)
+
+# Imprimir os números encontrados
+for match in matches:
+    print(match)
+</code></pre>
+<p>Nesse exemplo, a expressão regular <code>\d+</code> é usada para encontrar números inteiros no texto. O método <code>re.findall()</code> é utilizado para encontrar todas as ocorrências da expressão regular no texto. O resultado será:</p>
+<pre><code>25
+30
+</code></pre>
+<p>As expressões regulares são uma ferramenta poderosa para a Análise Léxica, permitindo identificar e extrair tokens específicos do código-fonte. Elas podem ser combinadas com outras técnicas, como autômatos finitos, para construir um analisador léxico completo.</p>
+<p>No entanto, é importante ressaltar que as expressões regulares têm suas limitações. Elas são adequadas para identificar padrões simples e regulares, mas podem se tornar complexas e difíceis de manter para linguagens com estruturas mais complexas. Nesses casos, outras técnicas, como a análise sintática, são necessárias para lidar com a estrutura hierárquica do código-fonte.</p>
+<ol>
+<li><strong>Análise Sintática (Fase da "gramática"):</strong>  Com as "palavras" identificadas, o compilador verifica se elas estão organizadas de forma correta, seguindo as regras gramaticais da linguagem. É como analisar se a ordem das palavras em uma frase faz sentido. Por exemplo, em português, dizemos "O gato comeu o peixe", e não "Comeu peixe o gato o". </li>
+</ol>
+<h4 id="analise-sintatica">Análise Sintática</h4>
+<p>A Análise Sintática é a segunda fase de um compilador, que ocorre após a Análise Léxica. Seu objetivo é verificar se a sequência de tokens gerada pela Análise Léxica está de acordo com as regras gramaticais da linguagem de programação. Em outras palavras, a Análise Sintática verifica se o código-fonte possui uma estrutura válida.</p>
+<p>Durante a Análise Sintática, o compilador constrói uma representação estruturada do código-fonte, geralmente na forma de uma árvore de análise sintática (AST - Abstract Syntax Tree). A AST representa a estrutura hierárquica do código, mostrando a relação entre os diferentes elementos da linguagem, como expressões, comandos e blocos de código.</p>
+<p>Existem duas abordagens principais para a Análise Sintática:</p>
+<ol>
+<li>
+<p>Análise Sintática Descendente (Top-Down Parsing):
+   Nessa abordagem, a análise começa a partir da regra gramatical mais geral e tenta derivar a sequência de tokens de entrada.
+   O método mais comum é a análise preditiva recursiva, que utiliza recursão para percorrer a gramática e construir a AST.
+   A análise descendente é adequada para gramáticas LL (Left-to-right, Leftmost derivation), onde é possível escolher a regra correta a ser aplicada com base nos próximos tokens de entrada.</p>
+</li>
+<li>
+<p>Análise Sintática Ascendente (Bottom-Up Parsing):
+   Nessa abordagem, a análise começa a partir dos tokens de entrada e tenta reduzi-los às regras gramaticais até chegar à regra inicial.
+   O método mais comum é o LR (Left-to-right, Rightmost derivation), que utiliza uma tabela de análise para determinar as ações a serem tomadas com base nos tokens de entrada.
+   A análise ascendente é adequada para gramáticas mais complexas e ambíguas, onde a escolha da regra correta depende dos tokens futuros.</p>
+</li>
+</ol>
+<p>Exemplo de Análise Sintática usando a abordagem descendente:</p>
+<pre><code class="language-python">def parse_expression(tokens):
+    def parse_term(tokens):
+        if tokens[0] == 'NUMBER':
+            return ('NUMBER', tokens.pop(0)[1])
+        elif tokens[0] == 'LPAREN':
+            tokens.pop(0)
+            expr = parse_expression(tokens)
+            if tokens.pop(0) != 'RPAREN':
+                raise ValueError(&quot;Parêntese de fechamento ausente&quot;)
+            return expr
+
+    def parse_factor(tokens):
+        term = parse_term(tokens)
+        while tokens and tokens[0] in ['MULTIPLY', 'DIVIDE']:
+            op = tokens.pop(0)
+            right = parse_term(tokens)
+            term = (op, term, right)
+        return term
+
+    expr = parse_factor(tokens)
+    while tokens and tokens[0] in ['PLUS', 'MINUS']:
+        op = tokens.pop(0)
+        right = parse_factor(tokens)
+        expr = (op, expr, right)
+    return expr
+</code></pre>
+<p>Nesse exemplo, a função <code>parse_expression</code> realiza a análise sintática de uma expressão aritmética simples. Ela utiliza funções auxiliares <code>parse_term</code> e <code>parse_factor</code> para lidar com os diferentes níveis de precedência dos operadores. A análise é feita de forma recursiva, consumindo os tokens de entrada e construindo a AST correspondente.</p>
+<p>A Análise Sintática é uma fase crucial do compilador, pois garante que o código-fonte esteja estruturalmente correto antes de prosseguir para as próximas etapas, como a Análise Semântica e a Geração de Código. Ela também fornece informações importantes sobre a estrutura do programa, que são usadas nas fases posteriores do processo de compilação.</p>
+<ol>
+<li><strong>Análise Semântica (Fase da "interpretação"):</strong>  Após a análise sintática, o compilador precisa entender o significado do código. Ele verifica se as operações fazem sentido, se as variáveis foram declaradas corretamente e se os tipos de dados são compatíveis. É como analisar se as frases em um texto fazem sentido juntas e transmitem a mensagem desejada.</li>
+</ol>
+<p><img alt="imagem" src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1720096769/Captura_de_tela_2024-07-04_093819_t5qtk7.png" /></p>
+<h3 id="funcionamento-de-um-compilador">Funcionamento de um Compilador</h3>
+<p><img alt="imagem" src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1720096643/Captura_de_tela_2024-07-04_093530_jkncgc.png" /></p>
+<p><img alt="imagem" src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1720096770/Captura_de_tela_2024-07-04_093751_rvtlu6.png" /></p>
+<h3 id="vamos-rodar-tudo-isso-em-python">Vamos rodar tudo isso em Python!</h3>
+<p>Aqui está um exemplo de programa em Python que demonstra as três fases principais de um compilador: análise léxica, análise sintática e análise semântica.</p>
+<pre><code class="language-python">import re
+
+# Definição dos tokens
+tokens = [
+    (r'\d+', 'NUMBER'),
+    (r'\+', 'PLUS'),
+    (r'\-', 'MINUS'),
+    (r'\*', 'MULTIPLY'),
+    (r'\/', 'DIVIDE'),
+    (r'\(', 'LPAREN'),
+    (r'\)', 'RPAREN'),
+    (r'\s+', 'WHITESPACE')
+]
+
+# Análise Léxica
+def lexical_analysis(code):
+    lexemes = []
+    while code:
+        matched = False
+        for token_expr, token_type in tokens:
+            match = re.match(token_expr, code)
+            if match:
+                value = match.group()
+                if token_type != 'WHITESPACE':
+                    lexemes.append((token_type, value))
+                code = code[len(value):]
+                matched = True
+                break
+        if not matched:
+            raise ValueError(f&quot;Lexema inválido: {code}&quot;)
+    return lexemes
+
+# Análise Sintática
+def syntax_analysis(lexemes):
+    ast = []
+    while lexemes:
+        token_type, value = lexemes.pop(0)
+        if token_type == 'NUMBER':
+            ast.append(('NUMBER', int(value)))
+        elif token_type in ['PLUS', 'MINUS', 'MULTIPLY', 'DIVIDE']:
+            ast.append((token_type,))
+        elif token_type == 'LPAREN':
+            sub_expr = syntax_analysis(lexemes)
+            ast.append(('EXPR', sub_expr))
+            if lexemes.pop(0)[0] != 'RPAREN':
+                raise ValueError(&quot;Parêntese de fechamento ausente&quot;)
+        else:
+            raise ValueError(f&quot;Token inesperado: {token_type}&quot;)
+    return ast
+
+# Análise Semântica
+def semantic_analysis(ast):
+    if isinstance(ast, tuple):
+        if ast[0] == 'NUMBER':
+            return ast[1]
+        elif ast[0] in ['PLUS', 'MINUS', 'MULTIPLY', 'DIVIDE']:
+            return ast[0]
+        elif ast[0] == 'EXPR':
+            return semantic_analysis(ast[1])
+    elif isinstance(ast, list):
+        if len(ast) != 3:
+            raise ValueError(&quot;Expressão inválida&quot;)
+        left = semantic_analysis(ast[0])
+        op = semantic_analysis(ast[1])
+        right = semantic_analysis(ast[2])
+        if not isinstance(left, int) or not isinstance(right, int):
+            raise ValueError(&quot;Operandos inválidos&quot;)
+        if op == 'PLUS':
+            return left + right
+        elif op == 'MINUS':
+            return left - right
+        elif op == 'MULTIPLY':
+            return left * right
+        elif op == 'DIVIDE':
+            if right == 0:
+                raise ValueError(&quot;Divisão por zero&quot;)
+            return left // right
+
+# Exemplo de uso
+code = &quot;2 + (3 * 4) - 5&quot;
+print(&quot;Código fonte:&quot;, code)
+
+lexemes = lexical_analysis(code)
+print(&quot;Análise Léxica:&quot;, lexemes)
+
+ast = syntax_analysis(lexemes)
+print(&quot;Análise Sintática:&quot;, ast)
+
+result = semantic_analysis(ast)
+print(&quot;Análise Semântica:&quot;, result)
+</code></pre>
+<p>Explicação do programa:</p>
+<ol>
+<li>Análise Léxica:</li>
+<li>Definimos os tokens que o compilador reconhecerá, como números, operadores e parênteses.</li>
+<li>A função <code>lexical_analysis</code> recebe o código-fonte como entrada e retorna uma lista de lexemas (tokens) encontrados no código.</li>
+<li>
+<p>Utilizamos expressões regulares para identificar os tokens no código-fonte.</p>
+</li>
+<li>
+<p>Análise Sintática:</p>
+</li>
+<li>A função <code>syntax_analysis</code> recebe a lista de lexemas como entrada e constrói uma árvore de análise sintática (AST - Abstract Syntax Tree).</li>
+<li>Percorremos os lexemas e construímos a AST com base na estrutura da expressão.</li>
+<li>
+<p>Tratamos parênteses aninhados recursivamente.</p>
+</li>
+<li>
+<p>Análise Semântica:</p>
+</li>
+<li>A função <code>semantic_analysis</code> recebe a AST como entrada e realiza a análise semântica.</li>
+<li>Percorremos a AST recursivamente e avaliamos a expressão de acordo com as regras semânticas.</li>
+<li>Verificamos se os operandos são válidos e realizamos as operações aritméticas correspondentes.</li>
+</ol>
+<p>No exemplo de uso, fornecemos um código-fonte simples <code>"2 + (3 * 4) - 5"</code> e aplicamos as três fases do compilador:
+1. Análise Léxica: Obtemos a lista de lexemas.
+2. Análise Sintática: Construímos a AST a partir dos lexemas.
+3. Análise Semântica: Avaliamos a expressão e obtemos o resultado final.</p>
+<p>Esse programa é uma simplificação das fases de um compilador e serve para ilustrar os conceitos básicos envolvidos em cada fase. Em um compilador real, essas fases são mais complexas e envolvem mais etapas e detalhes.</p>
+<h3 id="a-tabela-de-simbolos-organizando-a-informacao">A Tabela de Símbolos: Organizando a Informação</h3>
+<p>A tabela de símbolos é como um dicionário que o compilador utiliza para armazenar e organizar informações sobre todos os elementos do seu código, como variáveis, funções e classes. </p>
+<p>Imagine que você está organizando uma festa e precisa controlar uma lista de convidados. Para cada convidado, você anota seu nome, número de telefone e se ele confirmou presença. A tabela de símbolos funciona de maneira similar, guardando informações importantes sobre cada elemento do seu código.</p>
+<h3 id="atividade-em-sala-de-aula">Atividade em Sala de Aula</h3>
+<p><strong>Objetivo:</strong>  Compreender a importância do Debbuging!</p>
+<p><strong>Enunciado:</strong> Sabe o código mais acima sobre compilação em python? Pois é, ele está quebrado, a sua missão é ajustar o código!</p>
+<p><strong>Observação:</strong>  Discuta com seus colegas as diferenças entre variáveis e constantes, e a importância de definir o tipo de dado para cada elemento. </p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../.."</script>
+    
+    <script src="../../js/base.js"></script>
+    <script src="../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
